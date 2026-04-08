@@ -1,2 +1,4 @@
 # CINF362Project
 Working Importance of Native Plant Conservation website by Venus Ricketts, Joseph Franz, and Rizwan Mann for CINF 362
+
+The purpose of this website is to provide accessible, easy-to-digest information on the importance of native plant conservation to the average New York State resident. It will contain the following: definition of native plants, why and how we can preserve native plants, common native plant species, definition of invasive species, why invasive species are harmful to the environment, best removal practices, native pollinators, and examples of native pollinator gardens. The goal of this website is to help inform the average person on this important topic to spread awareness and best management practices. Another goal is to deliver the information in an accessible way, with plain or well-defined language, readable content, and organized page layouts. 
