@@ -1,0 +1,100 @@
+/*Page Styling */
+body{
+  
+  margin: 0;
+  background-color: #B3DEAF;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+/* Title */
+header{
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1{
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 6px;
+  background-color: #80BF80;
+}
+/* Navigation */
+
+nav a{
+  background-color: #75D975;
+  display: inline-block; 
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+a{
+  color: #333
+}
+
+a:hover {
+  color: #067306
+}
+
+/*  Main */
+
+main{
+  padding: 30px;
+  max-width:  800px;
+  margin: auto;
+}
+
+h2, h3{
+  color: #2F5D3A;
+}
+
+/* Footer */
+
+footer {
+  background-color: #86C286;
+  text-align: center;
+  padding: 8px;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+}
+
+/* Phone */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+}
