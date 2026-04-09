@@ -41,5 +41,27 @@
             <button onclick="showInfo('goldenrod')">Learn More</button>
         </div>
     </section>
+<section class="info-box" id="infoBox">
+        <p>Select a plant to learn more.</p>
+    </section>
+  
+    <footer>
+        <p>© 2026 Native Plants in New York State</p>
+    </footer>
+
+    <script>
+        function showInfo(plant) {
+            const infoBox = document.getElementById("infoBox");
+
+            if (plant === "milkweed") {
+                infoBox.innerHTML = "Milkweed is crucial for monarch butterfly reproduction and survival.";
+            } else if (plant === "susan") {
+                infoBox.innerHTML = "Black-Eyed Susans are drought-resistant and bloom all summer.";
+            } else if (plant === "goldenrod") {
+                infoBox.innerHTML = "Goldenrod supports pollinators when most flowers have faded.";
+            }
+        }
+    </script>
 
 </body>
+</html>
