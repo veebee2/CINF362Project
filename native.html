@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0>
-      <title>Native Plants</title>
-      <link rel="stylesheet" href="style.css">
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Plants of New York</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-  <header>
+<header>
     <nav class="navbar">
-      <h1 class="logo"> Native Plants in New York State</h1>
-      <ul class-"nav-links">
-        <li><a href="invasive.html">Home</a></li>
-        <li><a href="native.html" class="active">Native Plants</a></li>
-        <li><a href="bestprac.html">About</a></li>
-      </ul>
+        <h1 class="logo">Native Plants in New York State</h1>
+        <ul class="nav-links">
+            <li><a href="#definition">Definition</a></li>
+            <li><a href="#preservation">Why Preserve</a></li>
+            <li><a href="#species">Common Species</a></li>
+            <li><a href="#pollinators">Native Pollinators</a></li>
+        </ul>
     </nav>  
-  </header>
-    <section class="hero">
-        <h2>Native Plants</h2>
-        <p>Supporting local ecosystems through sustainable planting</p>
-    </section>
- <section class="content">
+</header>
+
+<section class="hero">
+    <h2>Protecting Local Biodiversity</h2>
+    <p>Supporting local ecosystems through sustainable planting</p>
+</section>
+
+<section id="definition" class="content-section">
+    <h2>What are Native Plants?</h2>
+    <p>Native plants are species that have occurred naturally in a particular region, ecosystem, or habitat without human introduction. In New York, these plants have co-evolved over thousands of years with local wildlife.</p>
+</section>
+
+<hr>
+
+<section id="preservation" class="content-section">
+    <h2>Why and How to Preserve Native Plants</h2>
+    <p>Preserving native flora is vital for maintaining healthy soil, clean water, and food for local wildlife. You can help by:</p>
+    <ul>
+        <li>Removing invasive species from your yard.</li>
+        <li>Reducing lawn space in favor of native garden beds.</li>
+        <li>Avoiding pesticides that harm the insects relying on these plants.</li>
+    </ul>
+</section>
+
+<hr>
+
+<section id="species" class="content">
+    <h2>Common Native Plant Species</h2>
+    <div class="plant-grid">
         <div class="plant-card">
             <h3>Milkweed</h3>
             <p>Essential for monarch butterflies and pollinators.</p>
@@ -40,29 +64,43 @@
             <p>Provides late-season nectar for pollinators.</p>
             <button onclick="showInfo('goldenrod')">Learn More</button>
         </div>
-    </section>
-<section class="info-box" id="infoBox">
+    </div>
+
+    <div class="info-box" id="infoBox">
         <p>Select a plant to learn more. Click the buttons above to see details here.</p>
-    </section>
-  
-  <footer>
+    </div>
+</section>
+
+<hr>
+
+<section id="pollinators" class="content-section">
+    <h2>Native Pollinators</h2>
+    <p>New York is home to diverse pollinators, including the Ruby-throated Hummingbird, the Karner Blue Butterfly, and over 450 species of wild bees. These creatures rely on native plants for survival.</p>
+</section>
+
+<footer>
     <p>© 2026 Native Plants in New York State | Created by Joseph Franz</p>
-    <p><a href="index.html">Home</a> | <a href="bestprac.html">About</a> | <a href="native.html">Native Plants</a></p>
+    <p>
+        <a href="#definition">Definition</a> | 
+        <a href="#preservation">Preservation</a> | 
+        <a href="#species">Species</a> | 
+        <a href="#pollinators">Pollinators</a>
+    </p>
 </footer>
 
-    <script>
-        function showInfo(plant) {
-            const infoBox = document.getElementById("infoBox");
+<script>
+    function showInfo(plant) {
+        const infoBox = document.getElementById("infoBox");
 
-            if (plant === "milkweed") {
-                infoBox.innerHTML = "Milkweed is crucial for monarch butterfly reproduction and survival.";
-            } else if (plant === "susan") {
-                infoBox.innerHTML = "Black-Eyed Susans are drought-resistant and bloom all summer.";
-            } else if (plant === "goldenrod") {
-                infoBox.innerHTML = "Goldenrod supports pollinators when most flowers have faded.";
-            }
+        if (plant === "milkweed") {
+            infoBox.innerHTML = "<strong>Milkweed:</strong> Crucial for monarch butterfly reproduction and survival.";
+        } else if (plant === "susan") {
+            infoBox.innerHTML = "<strong>Black-Eyed Susan:</strong> Drought-resistant and blooms all summer.";
+        } else if (plant === "goldenrod") {
+            infoBox.innerHTML = "<strong>Goldenrod:</strong> Supports pollinators when most flowers have faded.";
         }
-    </script>
+    }
+</script>
 
 </body>
 </html>
