@@ -86,7 +86,26 @@
     </p>
   </section>
 </main>
-   
+   <script>
+  // Select all FAQ buttons
+  const questions = document.querySelectorAll('.faq-question');
+
+  questions.forEach(button => {
+    button.addEventListener('click', () => {
+      const faqItem = button.parentElement;
+
+      // Toggle the 'active' class on the clicked item
+      faqItem.classList.toggle('active');
+
+      // Optional: Close other open questions when one is clicked
+      document.querySelectorAll('.faq-item').forEach(otherItem => {
+        if (otherItem !== faqItem) {
+          otherItem.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
 <footer>
     <p>Authors: Venus Ricketts, Joseph Franz, Rizwan Mann</p>
     <p><a href="mailto:vricketts@albany.edu">Send feedback</a></p>
